@@ -1,7 +1,50 @@
 .leaderWrapper {
-    height: 110%;
+    height: 80%;
     width: 100%;
     
-    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font1, 'sans-serif');
+}
+
+.leaderInnerWrapper {
+    height: 80%;
+    width: 80%;
     position: relative;
+}
+
+.leaderWrapper img {
+    height: 100%;
+    width: 65%;
+}
+
+.leaderTextWrapper {
+    background-color: white;
+
+    height: 60%;
+    width: 50%;
+    padding-left: 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 10%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.leaderTitle {
+    width: 70%;
+    font-size: max(2.5rem, 2.5vw);
+    font-family: var(--font2, 'sans-serif');
+    text-transform: uppercase;
+}
+
+.leaderDescription {
+    font-size: max(0.85rem, 0.85vw);
+    line-height: 150%;
+    color: var(--darkGray);
 }

@@ -1,0 +1,118 @@
+.creationsWrapper {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--font2, 'sans-serif');
+}
+
+.creationsHeader {
+    height: 10%;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.creationsHeader p {
+    font-size: max(2rem, 2vw);
+    text-transform: uppercase;
+}
+
+button {
+    padding: 1% 3%;
+    font-family: var(--font2, 'sans-serif');
+    font-size: max(1rem, 1vw);
+    text-transform: uppercase;
+
+    border-style: solid;
+    border-width: 0.1vw;
+}
+
+.creationsContainer {
+    height: 90%;
+    width: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 5%;
+    column-gap: 2%;
+}
+
+.creation {
+    flex-basis: 22%;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creation p {
+    width: 10%;
+    font-size: max(1.5rem, 1.5vw);
+    text-transform: uppercase;
+    padding: 0 0 5% 5%;
+}
+
+.earth {
+    background-image: 
+        url("../images/desktop/image-deep-earth.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.arcade {
+    background-image: 
+        url("../images/desktop/image-night-arcade.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.soccer {
+    background-image: 
+        url("../images/desktop/image-soccer-team.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.grid {
+    background-image: 
+        url("../images/desktop/image-grid.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.above {
+    background-image: 
+        url("../images/desktop/image-from-above.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.borealis {
+    background-image: 
+        url("../images/desktop/image-pocket-borealis.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.curiosity {
+    background-image: 
+        url("../images/desktop/image-curiosity.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
+
+.fisheye {
+    background-image: 
+        url("../images/desktop/image-fisheye.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+}
