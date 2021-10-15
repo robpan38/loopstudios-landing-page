@@ -1,0 +1,65 @@
+.headerWrapper {
+    height: 70%;
+    width: 100%;
+    background-image: 
+        url("../images/desktop/image-hero.jpg"),
+        linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 10%;
+
+    color: white;
+    font-family: var(--font1, 'sans-serif');
+}
+
+.headerMenuWrapper {
+    width: 80%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerMenuWrapper img {
+    height: 35%;
+    width: 17%;
+}
+
+.headerMenu {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+}
+
+.headerMenu p {
+    font-size: max(0.9rem, 0.9vw);
+}
+
+.headerText {
+    height: 55%;
+    width: 40%;
+    border-style: solid;
+    border-color: white;
+
+    align-self: flex-start;
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+.headerText p {
+    font-size: max(3.6rem, 3.6vw);
+    text-transform: uppercase;
+    font-family: var(--font2, 'sans-serif');
+}
