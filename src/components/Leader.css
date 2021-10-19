@@ -48,3 +48,40 @@
     line-height: 150%;
     color: var(--darkGray);
 }
+
+@media screen and (max-width: 1050px) {
+    .leaderTitle {
+        width: 100%;
+        font-size: calc(2 * 16px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .leaderInnerWrapper {
+        height: 85%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .leaderWrapper img {
+        height: 35%;
+        width: 100%;
+    }
+
+    .leaderTextWrapper {
+        width: 100%;
+        padding-left: 0;
+
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .leaderDescription {
+        width: 85%;
+    }
+}

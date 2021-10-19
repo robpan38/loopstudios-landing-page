@@ -1,11 +1,14 @@
 import './Creations.css';
+import useMediaQuery from './useMediaQuery';
 
 const Creations = () => {
+    const isScreenSmall = useMediaQuery("(max-width: 750px)");
+    
     return (
         <div className="creationsWrapper">
             <div className="creationsHeader">
                 <p>Our creations</p>
-                <button>See all</button>
+                {isScreenSmall === false ? <button>See all</button> : null}
             </div>
             <div className="creationsContainer">
                 <div className="creation earth">
@@ -33,6 +36,7 @@ const Creations = () => {
                     <p>Make it fisheye</p>
                 </div>
             </div>
+            {isScreenSmall === true ? <button>See all</button> : null}
         </div>
     );
 }

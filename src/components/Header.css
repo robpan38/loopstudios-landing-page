@@ -41,6 +41,19 @@
 
 .headerMenu p {
     font-size: max(0.9rem, 0.9vw);
+    cursor: pointer;
+    position: relative;
+}
+
+.headerMenu p:hover::after {
+    content: '';
+    height: 3%;
+    width: 100%;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
 }
 
 .headerText {
@@ -62,4 +75,40 @@
     font-size: max(3.6rem, 3.6vw);
     text-transform: uppercase;
     font-family: var(--font2, 'sans-serif');
+}
+
+@media screen and (max-width: 1050px) {
+    .headerMenu p {
+        font-size: 0.8rem;
+    }
+
+    .headerText p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .headerWrapper {
+        background-image: 
+            url("../images/mobile/image-hero.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .headerLogo {
+        height: 30% !important;
+        width: 40% !important;
+    }
+
+    .hamburger {
+        height: 14% !important;
+        width: 10% !important;
+    }
+
+    .headerText {
+        height: 30%;
+        width: 80%;
+    }
 }

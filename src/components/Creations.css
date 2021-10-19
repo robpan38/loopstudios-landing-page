@@ -31,6 +31,14 @@ button {
 
     border-style: solid;
     border-width: 0.1vw;
+    border-color: black;
+    background-color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .creationsContainer {
@@ -54,11 +62,17 @@ button {
     background-size: cover;
 }
 
+.creation:hover {
+    opacity: 0.7;
+    color: black;
+}
+
 .creation p {
     width: 10%;
     font-size: max(1.5rem, 1.5vw);
     text-transform: uppercase;
     padding: 0 0 5% 5%;
+    opacity: 1 !important;
 }
 
 .earth {
@@ -115,4 +129,82 @@ button {
         url("../images/desktop/image-fisheye.jpg"),
         linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
     background-blend-mode: hard-light;
+}
+
+@media screen and (max-width: 1050px) {
+    .creation p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .creationsWrapper {
+        height: 150%;
+    }
+
+    .creationsHeader {
+        height: 7%;
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 4%;
+        padding: 4% 3%;
+    }
+
+    .creationsContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        row-gap: 2%;
+        column-gap: 0%;
+    }
+
+    .earth {
+        background-image: 
+            url("../images/mobile/image-deep-earth.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .arcade {
+        background-image: 
+            url("../images/mobile/image-night-arcade.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+    
+    .soccer {
+        background-image: 
+            url("../images/mobile/image-soccer-team.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .grid {
+        background-image: 
+            url("../images/mobile/image-grid.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .above {
+        background-image: 
+            url("../images/mobile/image-from-above.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .borealis {
+        background-image: 
+            url("../images/mobile/image-pocket-borealis.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .curiosity {
+        background-image: 
+            url("../images/mobile/image-curiosity.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
+
+    .fisheye {
+        background-image: 
+            url("../images/mobile/image-fisheye.jpg"),
+            linear-gradient(hsl(0, 0%, 30%), hsl(0, 0%, 30%));
+    }
 }

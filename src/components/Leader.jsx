@@ -1,11 +1,15 @@
 import './Leader.css';
 import vrGuyDesktop from '../images/desktop/image-interactive.jpg';
+import vrGuyMobile from '../images/mobile/image-interactive.jpg';
+import useMediaQuery from './useMediaQuery';
 
 const Leader = () => {
+    const isScreenSmall = useMediaQuery("(max-width: 750px)");
+
     return (
         <div className="leaderWrapper">
             <div className="leaderInnerWrapper">
-                <img src={vrGuyDesktop} alt="vrGuy"></img>
+                <img src={isScreenSmall === false ? vrGuyDesktop : vrGuyMobile} alt="vrGuy"></img>
                 <div class="leaderTextWrapper">
                     <p className="leaderTitle">The leader in interactive VR</p>
                     <p className="leaderDescription">

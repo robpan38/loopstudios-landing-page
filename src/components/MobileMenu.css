@@ -1,0 +1,45 @@
+.mobileMenuWrapper {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10%;
+
+    font-family: var(--font2, 'sans-serif');
+}
+
+.mobileMenuHeader {
+    height: 10%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileMenuLogo {
+    height: 30%;
+    width: 45%;
+}
+
+.close {
+    height: 22%;
+    width: 6%;
+}
+
+.mobileMenuText {
+    height: 60%;
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.mobileMenuText p{
+    font-size: 20px;
+    color: whitesmoke;
+}
